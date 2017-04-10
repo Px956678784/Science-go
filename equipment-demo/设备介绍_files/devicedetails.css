@@ -1,0 +1,295 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    background-color: #ffffff;
+}
+
+header {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background-color: #3e74b9;
+    text-align: center;
+    color: #FFF;
+}
+
+section {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+footer {
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+    color: #FFF;
+}
+
+.view-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 44px;
+    box-sizing: border-box;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+.page-container {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*background-color: #F8F8F8;*/
+}
+
+.page-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    font-size: 72px;
+}
+
+.title-p {
+
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: normal;
+
+}
+
+.title-red {
+    margin-left: 10px;
+    font-size: 12px;
+    color: red;
+
+}
+
+td {
+    border: solid #add9c0;
+    border-width: 0px 1px 1px 0px;
+}
+
+table {
+    border: solid #add9c0;
+    border-width: 1px 0px 0px 1px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 1em;
+}
+
+tr {
+    text-align: center;
+    height: 3em;
+}
+
+#next {
+    width: 50%;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #009dd9;
+    margin-left: 25%;
+    position: fixed;
+    bottom: 10px;
+}
+
+#pageB {
+    /*background-color: #ECB43A;*/
+}
+
+.background{
+    background:url("img/background.jpg");
+    background-repeat:no-repeat;
+    padding: 10px;
+}
+
+.tagimg{
+    margin-left: -10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.deviceSpanTitle {
+    color: #252525;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.deviceTagDiv {
+    height: 195px;
+    width: 436px;
+    margin: 10px auto;
+    background: url("img/words-background.png");
+    background-repeat: no-repeat;
+    font-family: 微软雅黑;
+}
+
+.deviceTagDiv span{
+    margin-left: 20px;
+}
+.diveTipsDiv {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #2f2f2f;
+}
+
+.devicePriceTitleSpan {
+    color: #2f2f2f;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.devicePrice {
+    font-size: 30px;
+    line-height: 50px;
+    color: #ffff00;
+}
+
+.deviceTagSpan {
+    color: #ffff00;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.deviceID{
+    color: #2f2f2f;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.diveDescriptionDiv {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.deviceDiv{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.deviceSpanPositio {
+    color: #848689;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.guide{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.item{
+    font-family: "微软雅黑 Light";
+    font-size: 17px;
+    text-align: center;
+    padding: 5px;
+}
+
+a:link {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+a:visited {
+    color: #2f2f2f;
+    text-decoration: none;
+}
+@media screen and (min-width: 240px) {
+    html, body {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    html, body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    html, body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    html, body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    html, body {
+        font-size: 36px;
+    }
+}
+
+div.imgbox {
+    background-color: rgba(150, 150, 150, 0.3);
+    width: 25rem;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+div.imgbox ul {
+    clear: both;
+    width: 75rem;
+    height: 150px;
+    display: inline-block;
+}
+
+div.imgbox ul li {
+    float: left;
+    width: 25rem;
+    height: 150px;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.imgbox ul li img {
+    width: 150px;
+    height: 150px;
+}

@@ -1,0 +1,360 @@
+.line {
+    background-color: lightgrey;
+    height: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px
+
+}
+
+.error-tip {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #e13a28;
+    top: 0;
+    opacity: 0;
+    z-index: -111111;
+}
+
+.error-tip.tip_show {
+    opacity: 1;
+    z-index: 111111;
+}
+
+.error-tip .tip-msg {
+    height: 100%;
+    color: #fff;
+    line-height: 30px;
+}
+
+.error-input {
+    color: #e13a28;
+    border-color: #e13a28 !important;
+}
+
+ul, li {
+    list-style: none;
+}
+
+@charset "utf-8";
+
+.list-block {
+    margin: 0 0 15px 0;
+    font-size: 15px;
+}
+
+.list-block ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.list-block .content-block-title {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #aaaaaa;
+    margin: 10px 0 10px 10px;
+}
+
+.list-block .item-content {
+    display: -webkit-box;
+    display: box;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    color: #696969;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.list-block .item-blank {
+    height: 15px;
+}
+
+.list-block .item-content.tallHeight {
+    height: 70px;
+    line-height: 70px;
+}
+
+.list-block .item-content:first-child {
+    border-top: 1px solid #EDEDED;
+}
+
+.list-block .item-content.title {
+
+    background-size: 18px 18px;
+    padding-right: 10px;
+    color: #575757;
+}
+
+.list-block .item-content.detail {
+    height: auto;
+    padding: 5px 10px;
+    display: block;
+}
+
+.list-block .item-content .item-detail {
+    width: 100%;
+    display: -webkit-box;
+    display: box;
+    line-height: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.list-block .item-media {
+    width: 30%;
+}
+
+.list-block .item-inner {
+    width: 68%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-block.text-right .item-inner {
+    text-align: right;
+    margin-right: 2%;
+    margin-left: 0;
+}
+
+/*
+.list-block .item-inner input {
+	margin-top: -20px;
+}
+*/
+
+.list-block .item-inner .text {
+    padding: 0 10px;
+    color: #999;
+}
+
+.list-block .item-link {
+    padding-right: 35px;
+
+    background-position: 93% center;
+    background-repeat: no-repeat;
+    background-size: 9px 14px;
+}
+
+.list-block .item-down {
+    padding-right: 35px;
+
+    background-position: 93% center;
+    background-repeat: no-repeat;
+    background-size: 13px 10px;
+}
+
+.list .item .img {
+    width: 20%;
+    height: 50px;
+    float: left;
+    padding-top: 4px;
+    padding-bottom: -4px;
+}
+
+.list .item .img img {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 5em;
+    border-radius: 5em;
+}
+
+.list .item.pressed, .list-block .item-content.item-pressed {
+    background-color: #ddd;
+}
+
+.list .empty {
+    padding: 18px 0px 0px 0px;
+    text-align: center;
+    color: #8b97a4;
+    border-bottom: 0px;
+}
+
+/*
+.list .item label,.list .item span {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 25px;
+}*/
+.list .item > div {
+    width: 100%;
+}
+
+.list .item label {
+    width: 35%;
+}
+
+.list .item span {
+    width: 55%;
+}
+
+.list .pullrefresh {
+    color: #8b97a4;
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+
+.list .pullrefresh .pullrefresh-arrow {
+    position: relative;
+    left: 30%;
+
+    background-size: 25px 50px;
+    width: 25px;
+    height: 50px;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 200ms;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.list .pullrefresh .pullrefresh-text {
+    position: relative;
+    top: -30px;
+}
+
+.list .pullrefresh .pullrefresh-arrow.pullrefresh-release {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.list .loadmore, .list-item .loadmore {
+    padding: 0;
+    width: 100%;
+    color: #8B97A4;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 40px;
+}
+
+.list-block.confirm {
+    margin: 5px 0 10px 0;
+    padding: 0 3px;
+}
+
+.list-block.confirm .item-content {
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 12px;
+    margin: 0 3px;
+    background-size: 100% 100%;
+}
+
+.list-block.confirm .item-content .item-inner {
+    text-align: right;
+}
+
+.list-block.confirm .item-content:first-child {
+
+    background-size: 100% 40px;
+    height: 40px;
+    line-height: 55px;
+}
+
+.list-block.confirm .item-content:last-child {
+
+    background-size: 100% 40px;
+    height: 40px;
+    line-height: 25px;
+}
+
+/* 向上弹出列表 */
+body {
+    color: #363636;
+}
+
+.top-popup {
+    display: none;
+}
+
+.top-popup .top-popup-bg {
+    background: #000;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 1024;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.top-popup .top-popup-main {
+    background-color: #fff;
+    width: 100%;
+    z-index: 1025;
+    position: fixed;
+}
+
+.top-popup .top-popup-title {
+    display: -webkit-box;
+    display: box;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 2.5em;
+    border-bottom: 1px solid #dedede;
+}
+
+.top-popup .top-popup-title .top-popup-title-name {
+    width: 85%;
+    text-align: center;
+}
+
+.top-popup .top-popup-title .top-popup-close {
+    width: 15%;
+    font-size: 1.4em;
+    color: #999;
+    text-align: center;
+}
+
+.top-popup .top-popup-list {
+    display: -webkit-box;
+    display: box;
+    height: 250px;
+    padding: 0 15px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+.top-popup .top-popup-list ul {
+    width: 100%;
+}
+
+.top-popup .top-popup-list ul li {
+    position: relative;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 15px;
+}
+
+.top-popup .top-popup-list ul li:last-child {
+    border: none;
+}
+
+.top-popup .top-popup-list ul li:after {
+    position: absolute;
+    right: 0;
+    content: "\2714";
+    color: red;
+    visibility: hidden;
+}
+
+.top-popup .top-popup-list ul li.selected:after {
+    visibility: visible;
+}
+
