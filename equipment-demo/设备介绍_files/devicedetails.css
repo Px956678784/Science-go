@@ -157,7 +157,7 @@ tr {
     height: 195px;
     width: 436px;
     margin: 10px auto;
-   background-color: #1b6d85;
+   background: url("img/words-background.png");
     background-repeat: no-repeat;
     font-family: 微软雅黑;
 }
