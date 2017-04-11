@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 * {
     margin: 0;
     padding: 0;
@@ -99,6 +99,31 @@ footer {
 
 }
 
+.title{
+    float: left;
+    width: 150px;
+    height: 54px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    background-color: #1C8DBC;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    color: #FFFFFF;
+}
+
+.title-triangle{
+    float: left;
+    width:0;
+    height:0;
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+    border-left: 27px solid #1C8DBC;
+}
+
+.title span{line-height: 53px;}
+
+
 td {
     border: solid #add9c0;
     border-width: 0px 1px 1px 0px;
@@ -157,10 +182,12 @@ tr {
     height: 137px;
     width: 262px;
     margin: 0px auto;
-   background: url("img/words-background.png");
+    background: url("img/words-background.svg");
+    background-size: 262px 137px;
     background-repeat: no-repeat;
     font-family: 微软雅黑;
 }
+
 
 .deviceTagDiv span{
     margin-left: 10px;
@@ -170,24 +197,25 @@ tr {
     text-align: center;
     font-size: 12px;
     color: #2f2f2f;
+    padding: 10px;
 }
 
 .devicePriceTitleSpan {
     color: #2f2f2f;
     font-size: 12px;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .devicePrice {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 20px;
     color: #ffff00;
 }
 
 .deviceTagSpan {
     color: #ffff00;
     font-size: 12px;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .deviceID{
@@ -209,8 +237,9 @@ tr {
 .deviceSpanPositio {
     color: #848689;
     display: inline-block;
-    font-size: 15px;
+    font-size: 12px;
     line-height: 18px;
+
 }
 
 .guide{
@@ -227,6 +256,7 @@ tr {
     text-align: center;
     padding: 3px;
 }
+
 
 a:link {
     color: #2f2f2f;
@@ -271,7 +301,9 @@ div.imgbox {
     width: 25rem;
     height: 150px;
     overflow: hidden;
-    margin: 0 auto;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div.imgbox ul {
